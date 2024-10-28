@@ -1,0 +1,22 @@
+import nltk.downloader
+from nltk.tokenize import sent_tokenize 
+
+
+file = open("y:\\AI and ML\\yashwanth\\nlp.txt")
+text = file.read()
+
+import nltk
+nltk.download()
+sentences = sent_tokenize(text)
+print("Number of sentences:", len(sentences))
+
+
+for i in range(len(sentences)): 
+    print("\nSentence", i + 1, ":\n", sentences[i])
+
+
+from nltk.tokenize import word_tokenize
+words=word_tokenize(text)
+print("total number of words:",len(words))
+print(words)
+
