@@ -1,0 +1,15 @@
+import pandas as pd 
+import matplotlib.pyplot as plt 
+iris = pd.read_csv("Y:\AI and ML\PY WEEKS\WEEK 3\iris.csv") 
+print(iris.head( )) 
+print("\n The size of the data for given dataset\n") 
+print(iris.shape) 
+print("\n Scatter plot to compare petal length and petal width\n") 
+plt.scatter(iris['petal_length'], iris['petal_width']) 
+plt.xlabel('Petal Length') 
+plt.ylabel('Petal Width') 
+plt.show( ) 
+print("\n Check for missing values:\n") 
+print(iris.isnull( ).sum( )) 
+print("\n Summary of the dataset\n") 
+print(iris.describe( )) 
